@@ -32,7 +32,7 @@ echo "main.yml file created "
 echo
 }
 
- while getopts ":h:g:c" OPTION; do
+ while getopts ":h:g:" OPTION; do
   case "$OPTION" in 
     h)
       hosts=$OPTARG
@@ -44,10 +44,6 @@ echo
       create_main
       ;;
 
-    c)
-      echo "Option c used"
-      ;;
-
     *) 
       usage
       exit 1
@@ -55,7 +51,7 @@ echo
   esac
 done
 
-#If the first parameter is empty
+#If the -g parameter is empty
 if [ -z "$3" ]; then
 usage
 exit 1
