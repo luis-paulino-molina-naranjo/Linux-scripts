@@ -20,6 +20,14 @@ Example Usage
 bash create-playbook.sh -h lab -g false
 ```
 
-    
+Usage:
+-------------
+
+Usage: create-playbook [-h] [-g]
+
+Requires:
+-h    hosts name group in your inventory file
+-g    gather fact value true or false
+
 
 

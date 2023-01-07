@@ -5,7 +5,7 @@ gather_facts=""
 usage() {
 
 cat <<EOF
-Usage: $(basename $0) [-h] [-g]
+Usage: create-playbook [-h] [-g]
 
 Requires:
 -h    hosts name group in your inventory file
