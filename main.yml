@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  gather_facts: true
+  become: true
+  tasks:
+
+  - name: Execute the command in remote shell
+    ansible.builtin.shell: ls /
+    register: output
